@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+		font-family: 'Poppins';
+		src: local('Poppins'), local('Poppins'), url('/fonts/Poppins/Poppins_Regular.woff');
+		font-weight: Regular;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Poppins';
+		src: local('Poppins'), local('Poppins'), url('/fonts/Poppins/Poppins_SemiBold.woff');
+		font-weight: SemiBold;
+		font-display: swap;
+	}
+
+	body {
+		background-color : #F7F7F7
+	}
+}
