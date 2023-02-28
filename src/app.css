@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
+	@font-face {
 		font-family: 'Poppins';
 		src: local('Poppins'), local('Poppins'), url('/fonts/Poppins/Poppins_Regular.woff');
 		font-weight: Regular;
@@ -17,7 +17,6 @@
 	}
 
 	body {
-		background-color : #F7F7F7;
-		
+		background-color: #f7f7f7;
 	}
 }
