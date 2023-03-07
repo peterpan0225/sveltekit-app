@@ -10,7 +10,7 @@
 	<div class="w-full rounded-3xl px-10 py-10 bg-white">
 		<div class="w-full aspect-[1.2] ">
 			<a href="#pa">
-				<img class="w-full h-full rounded-3xl ease-in duration-300 hover:scale-105" src={img_name} alt="" />
+				<img class="w-full h-full rounded-3xl ease-in duration-200 hover:scale-105" src={img_name} alt="" />
 			</a>
 		</div>
 		<div class="px-3 mt-10">

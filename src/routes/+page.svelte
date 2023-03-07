@@ -1,4 +1,5 @@
 <script lang="ts">
+  import TabButton from '../lib/tab/TabButton.svelte';
 	import startImg from '../lib/images/start-img.png';
 	import sp_img_1 from '../lib/images/unsplash_1.png';
 	import sp_img_2 from '../lib/images/unsplash_2.png';
@@ -31,6 +32,7 @@
 				Special Upcoming Offers
 			</h1>
 		</div>
+    <TabButton />
 		<div class="container flex flex-row flex-wrap mx-auto">
 			<div class="w-full sm:w-1/2 md:w-1/3">
 				<CardOffer
@@ -51,6 +53,15 @@
 				/>
 			</div>
 			<div class="w-full sm:w-1/2 md:w-1/3">
+				<CardOffer
+					img_name={sp_img_3}
+					travel_reason="Relax"
+					travel_period="4 Days, 3 Nights"
+					travel_place="Lona X"
+					travel_price="350"
+				/>
+			</div>
+      <div class="w-full sm:w-1/2 md:w-1/3">
 				<CardOffer
 					img_name={sp_img_3}
 					travel_reason="Relax"
