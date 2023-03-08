@@ -33,7 +33,7 @@
 			</h1>
 		</div>
     <TabButton />
-		<div class="container flex flex-row flex-wrap mx-auto">
+		<div class=" flex flex-row flex-wrap mx-auto">
 			<div class="w-full sm:w-1/2 md:w-1/3">
 				<CardOffer
 					img_name={sp_img_1}
