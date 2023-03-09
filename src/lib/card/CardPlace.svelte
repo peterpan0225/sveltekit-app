@@ -7,7 +7,7 @@
 
 <div class="w-full h-full p-4">
 	<div class="w-full rounded-3xl p-5 bg-white">
-		<div class="w-full aspect-[1.2] ">
+		<div class="w-full aspect-[1.3] ">
 			<a href="#pa">
 				<img class="w-full h-full rounded-3xl ease-in duration-200 hover:scale-105" src={img_name} alt="" />
 			</a>
