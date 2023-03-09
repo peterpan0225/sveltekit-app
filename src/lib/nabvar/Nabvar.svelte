@@ -35,13 +35,13 @@
 		<div class="lg:flex items-center {nabvarOpen ? 'block' : 'hidden'}">
 			<ul class="flex flex-col lg:flex-row list-none ml-auto">
 				<li class="flex items-center">
-					<a class="text-xm px-3 py-2 text-gray-700 hover:text-gray-500" href="/">Review</a>
+					<a class="text-xm px-3 py-2 text-gray-700 hover:text-gray-500" href="/review">Review</a>
 				</li>
 				<li class="flex items-center">
-					<a class="text-xm px-3  py-2 text-gray-700 hover:text-gray-500" href="/">Tips</a>
+					<a class="text-xm px-3  py-2 text-gray-700 hover:text-gray-500" href="/offer">Offer</a>
 				</li>
 				<li class="flex items-center">
-					<a class="text-xm px-3 py-2 text-gray-700 hover:text-gray-500" href="/">Alert</a>
+					<a class="text-xm px-3 py-2 text-gray-700 hover:text-gray-500" href="/about">About</a>
 				</li>
 			</ul>
 		</div>
