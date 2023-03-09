@@ -1,5 +1,6 @@
 <script lang="ts">
-  import TabButton from '../lib/tab/TabButton.svelte';
+  import TabBtnOffer from '../lib/tab/TabBtnOffer.svelte';
+	import TabBtnPlace from '../lib/tab/TabBtnPlace.svelte';
 	import startImg from '../lib/images/start-img.png';
 	import sp_img_1 from '../lib/images/unsplash_1.png';
 	import sp_img_2 from '../lib/images/unsplash_2.png';
@@ -32,7 +33,7 @@
 				Special Upcoming Offers
 			</h1>
 		</div>
-    <TabButton />
+    <TabBtnOffer />
 		<div class=" flex flex-row flex-wrap mx-auto">
 			<div class="w-full sm:w-1/2 md:w-1/3">
 				<CardOffer
