@@ -3,7 +3,7 @@
 	import Nabvar from '../lib/nabvar/Nabvar.svelte';
 
 	let y: number;
-	$: scrolled = y > 50 ? true : false;
+	$: scrolled = y >= 0 ? true : false;
 </script>
 
 <Nabvar {scrolled} />
