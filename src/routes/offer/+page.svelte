@@ -1,17 +1,24 @@
 <script lang="ts">
+
+  /** @type {import('./$types').PageData} */
+  export let data: any;
+
   import TabBtnOffer from '$lib/tab/TabBtnOffer.svelte';
 	import sp_img_1 from '$lib/images/unsplash_1.png';
 	import sp_img_2 from '$lib/images/unsplash_2.png';
 	import sp_img_3 from '$lib/images/unsplash_3.png';
 
 	import CardOffer from '$lib/card/CardOffer.svelte';
+
+
 </script>
 
 <section class="w-full mt-10">
+ 
 	<div class="w-full flex flex-wrap flex-row">
 		<div class="w-full px-4 py-12">
 			<h1 class="lg:text-[48px] sm:text-[24px] text-[20px] font-semibold text-gray-800 text-center">
-				Special Upcoming Offers
+				Special Upcoming Offers {data.title} - {data.content}
 			</h1>
 		</div>
     <TabBtnOffer />
