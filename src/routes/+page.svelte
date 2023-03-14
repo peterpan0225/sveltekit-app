@@ -40,6 +40,33 @@
 			travel_price: "100"
 		}, 
 	]
+
+	let placeData = [
+		{
+			img_name: "src/lib/images/destination_1.png",
+			name: "Kina Mountain",
+			place: "Cambodia",
+			mark: "4.5"
+		}, 
+		{
+			img_name: "src/lib/images/destination_2.png",
+			name: "Kina Mountain",
+			place: "Cambodia",
+			mark: "5"
+		},
+		{
+			img_name: "src/lib/images/destination_3.png",
+			name: "Kina Mountain",
+			place: "Cambodia",
+			mark: "4.8"
+		},
+		{
+			img_name: "src/lib/images/destination_4.png",
+			name: "Kina Mountain",
+			place: "Cambodia",
+			mark: "4.2"
+		}
+	]
 </script>
 
 <section class="w-full">
@@ -86,38 +113,11 @@
 		</div>
     <TabBtnPlace />
 		<div class="w-full flex flex-row flex-wrap px-2 md:px-5">
-			<div class="w-full sm:w-1/2 md:w-1/4">
-				<CardPlace
-					img_name="src/lib/images/destination_1.png"
-					name="Kina Mountain"
-					place="Cambodia"
-					mark="4.5"
-				/>
-			</div>
-			<div class="w-full sm:w-1/2 md:w-1/4">
-				<CardPlace
-					img_name="src/lib/images/destination_2.png"
-					name="Kina Mountain"
-					place="Cambodia"
-					mark="3.4"
-				/>
-			</div>
-			<div class="w-full sm:w-1/2 md:w-1/4">
-				<CardPlace
-					img_name="src/lib/images/destination_3.png"
-					name="Kina Mountain"
-					place="Cambodia"
-					mark="5"
-				/>
-			</div>
-			<div class="w-full sm:w-1/2 md:w-1/4">
-				<CardPlace
-					img_name="src/lib/images/destination_4.png"
-					name="Kina Mountain"
-					place="Cambodia"
-					mark="4.6"
-				/>
-			</div>
+			{#each placeData as item}
+				<div class="w-full sm:w-1/2 md:w-1/4">
+					<CardPlace placeItem={item} ></CardPlace>
+				</div>
+			{/each}
 		</div>
 	</div>
 </section>
