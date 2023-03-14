@@ -10,7 +10,36 @@
 
 	import CardOffer from '$lib/card/CardOffer.svelte';
 
-
+	let offerData = [
+		{
+			img_name: sp_img_1,
+			travel_reason: "Relax",
+			travel_period: "3 Days, 3 Nights",
+			travel_place: "Loga See",
+			travel_price: "600"
+		}, 
+		{
+			img_name: sp_img_2,
+			travel_reason: "Relax",
+			travel_period: "4 Days, 5 Nights",
+			travel_place: "Loga See",
+			travel_price: "700"
+		}, 
+		{
+			img_name: sp_img_3,
+			travel_reason: "Relax",
+			travel_period: "5 Days, 6 Nights",
+			travel_place: "Loga See",
+			travel_price: "400"
+		}, 
+		{
+			img_name: sp_img_1,
+			travel_reason: "Relax",
+			travel_period: "1 Days, 2 Nights",
+			travel_place: "Loga See",
+			travel_price: "100"
+		}, 
+	]
 </script>
 
 <section class="w-full mt-10">
@@ -23,42 +52,11 @@
 		</div>
     <TabBtnOffer />
 		<div class=" flex flex-row flex-wrap mx-auto">
-			<div class="w-full sm:w-1/2 md:w-1/3">
-				<CardOffer
-					img_name={sp_img_1}
-					travel_reason="Relax"
-					travel_period="3 Days, 3 Nights"
-					travel_place="Loga See"
-					travel_price="700"
-				/>
-			</div>
-			<div class="w-full sm:w-1/2 md:w-1/3">
-				<CardOffer
-					img_name={sp_img_2}
-					travel_reason="adventure"
-					travel_period="4 Days, 3 Nights"
-					travel_place="Ansgar Scheffold"
-					travel_price="400"
-				/>
-			</div>
-			<div class="w-full sm:w-1/2 md:w-1/3">
-				<CardOffer
-					img_name={sp_img_3}
-					travel_reason="Relax"
-					travel_period="4 Days, 3 Nights"
-					travel_place="Lona X"
-					travel_price="350"
-				/>
-			</div>
-      <div class="w-full sm:w-1/2 md:w-1/3">
-				<CardOffer
-					img_name={sp_img_3}
-					travel_reason="Relax"
-					travel_period="4 Days, 3 Nights"
-					travel_place="Lona X"
-					travel_price="350"
-				/>
-			</div>
+			{#each offerData as item}
+				<div class="w-full sm:w-1/2 md:w-1/3">
+					<CardOffer offerItem={item} />
+				</div>
+			{/each}
 		</div>
 	</div>
 </section>

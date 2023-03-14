@@ -1,4 +1,6 @@
 <script lang="ts">
+
+	
 	export let img_name: string;
 	export let name: string;
 	export let place: string;
